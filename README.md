@@ -27,6 +27,7 @@
 
 **라이브러리**
 - pandas: 데이터 불러오기, 데이터프레임 형태로 저장
+- ashlib: id 비식별화(sha256 활용)
 - ast: 문자열 형태의 리스트를 실제 python 객체로 변환
 - konlpy: 한국어 형태소 분석(Okt 분석기 활용)
 - collections: 단어 출현 빈도 계산 및 키워드 집계에 활용(Counter)
@@ -37,10 +38,7 @@
 ##📂폴더 구조
 ```
 PARTYROOM_REVIEW_ANALYSIS/
-├── data/ # 원본 및 전처리된 리뷰 데이터
-│ ├── partyroom_A_review.xlsx
-│ ├── partyroom_B_review.xlsx
-│ ├── partyroom_C_review.xlsx
+├── data/ # 전처리된 리뷰 데이터
 │ ├── A_preprocessing.xlsx
 │ ├── B_preprocessing.xlsx
 │ └── C_preprocessing.xlsx
@@ -76,7 +74,7 @@ PARTYROOM_REVIEW_ANALYSIS/
 ##🚀실행 방법
 1. '01_crawling.ipynb' 실행(네이버 지도 리뷰 데이터 수집)
 2. '02_preprocessing.ipynb' 실행(데이터 전처리)
-3. '03_analysis.ipynb'(데이터 정량적 분석)
+3. '03_analysis.ipynb'실행(데이터 정량적 분석)
 
 > 🔎참고:<br>
 > - '01_crawling'은 네이버 지도 구조 변경 시 CSS 선택자 업데이트 필요
